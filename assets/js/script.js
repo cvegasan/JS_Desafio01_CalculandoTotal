@@ -23,25 +23,23 @@ let valortotalSpan = document.querySelector(".valor-total");//selector por clase
 let pedido  = 0;
 let cantidad= 0;
 
-function fnactualizatotal(pedido,precio){
-    valortotalSpan.innerHTML = pedido * precio;
-    return 0;
-}
-
 //Declaración de funciones
-function fnsumaruno() {
+function fnActualizaTotal(pedido,precio){
+    return pedido * precio;
+}
+function fnSumarUno() {
     pedido += 1;
     cantidad = document.querySelector(".cantidad");
     cantidad.innerHTML = pedido;
-    fnactualizatotal(pedido,precio);
-    return 0;
+    valortotalSpan.innerHTML = fnActualizaTotal(pedido,precio);
+    return pedido;
 }
-function fnrestaruno() {
+function fnRestarUno() {
     if (pedido > 0) {
         pedido -= 1;
     }
     cantidad = document.querySelector(".cantidad");
     cantidad.innerHTML = pedido;
-        fnactualizatotal(pedido,precio);
-    return 0;
+    valortotalSpan.innerHTML = fnActualizaTotal(pedido,precio);
+    return pedido;
 }

@@ -3,15 +3,18 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
     font-family: sans-serif;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: rgba(255, 255, 255, 0.931);
     width: 180px;
     height: 270px;
@@ -19,9 +22,6 @@ body {
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.692);
     background: #7ba238;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .card .img-card {
@@ -65,4 +65,8 @@ body {
     background-color: black;
     border-radius: 50%;
     border: solid 1px;
+}
+
+.cls-ancho-total{
+    width:300px; /*esto es para que no salga el total en doble linea*/
 }
