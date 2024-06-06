@@ -32,7 +32,7 @@ function fnSumarUno() {
     cantidad = document.querySelector(".cantidad");
     cantidad.innerHTML = pedido;
     valortotalSpan.innerHTML = fnActualizaTotal(pedido,precio);
-    return pedido;
+    return 0;
 }
 function fnRestarUno() {
     if (pedido > 0) {
@@ -41,5 +41,5 @@ function fnRestarUno() {
     cantidad = document.querySelector(".cantidad");
     cantidad.innerHTML = pedido;
     valortotalSpan.innerHTML = fnActualizaTotal(pedido,precio);
-    return pedido;
+    return 0;
 }
